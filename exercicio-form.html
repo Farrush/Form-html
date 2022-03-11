@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-ligaDosProgramadores</title>
+</head>
+<body>
+    <h1>Cadastro da liga dos Programadores</h1>
+    <form>
+
+        <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+            <br><br>
+        <label for="email">Email:</label>
+            <input type="email" name="email">
+        <label for="senha">- Password</label>
+            <input type="password" name="senha">
+            <br><br>
+        <label for="data">Data de Nascimento:</label>
+            <input type="date" name="data">
+        <label for="foto">- Foto:</label>
+            <input type="file" name="foto">
+            <br><br>
+
+        <label for="país">Nacionalidade:</label>
+            <input list="nation" name="país"/>
+                <datalist id="nation">
+                    <option value="Brasil">
+                    <option value="Argentina">
+                    <option value="Uruguai">
+                </datalist>
+        <label for="gender">- Gênero:</label>
+            <label id="gender">F</label>
+                <input type="radio" name="gender">        
+            <label id="gender">M</label>
+                <input type="radio" name="gender">
+            <br><br>
+        <label for="linguagem">Linguagens que você domina:</label><br>
+            <input type="checkbox" id="js" name="js" value="JavaScript">
+        <label for="js">JavaScript -</label>
+            <input type="checkbox" id="pt" name="pt" value="Python">
+        <label for="pt">Python -</label>
+            <input type="checkbox" id="c" name="c" value="C">
+        <label for="c">C -</label>
+            <input type="checkbox" id="j" name="j" value="Java">
+        <label for="js">Java</label>
+        <br><br>
+        <textarea name="comments" id="comments" rows="10" cols="30" placeholder="Por que você quer ser um programador?"></textarea>
+        <br>
+        <input type="submit" value="Criar">
+    </form>
+</body>
+</html>
